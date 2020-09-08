@@ -110,4 +110,146 @@
     cursor: pointer;
   }
 }
+
 // end header
+
+// start search
+
+.search {
+  min-height: 725px;
+  background-color: #2549cd;
+}
+
+.search__inner {
+  padding-top: 195px;
+  color: $white;
+  text-align: center;
+  &-title {
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 40px;
+    span {
+      display: block;
+      font-weight: 700;
+    }
+  }
+
+  &-text {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 70px;
+  }
+}
+
+.search__btn {
+  padding: 12px 32px;
+  max-height: 55px;
+  text-align: center;
+  color: #fff;
+  border-radius: 27px;
+  font-weight: 500;
+  margin-bottom: 140px;
+  &-all {
+    background-color: #fff;
+    border: 1px solid transparent;
+    color: $blue;
+  }
+
+  &-popular {
+    border: 1px solid #fff;
+    margin-left: 30px;
+  }
+}
+
+.search__inner-form {
+  height: 135px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  margin-bottom: 140px;
+  top: 66px;
+  input {
+    display: block;
+    width: 100%;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    height: 55px;
+    padding-left: 27px;
+    padding-right: 220px;
+    &::placeholder {
+      color: #676767;
+      font-weight: 500;
+    }
+  }
+}
+
+.form__left {
+  max-width: 808px;
+}
+
+.search__form-all {
+  position: absolute;
+  border: none;
+  right: 292px;
+  top: 40px;
+  height: 55px;
+  width: 195px;
+  background-color: transparent;
+  color: $text;
+  border-left: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  &::after {
+    content: '';
+    background-image: url(../images/icons/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 13px;
+    height: 8px;
+  }
+}
+
+.search__form-now {
+  position: absolute;
+  border: none;
+  right: 40px;
+  top: 40px;
+  height: 55px;
+  width: 223px;
+  margin-left: 30px;
+  border-radius: 3px;
+  background-color: $blue;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search__bg-1 {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.502;
+  top: -13px;
+  left: 0;
+  height: 30px;
+  width: 1110px;
+  margin: 0 15px;
+  border-radius: 6px;
+}
+
+.search__bg-2 {
+  position: absolute;
+  background-color: #fff;
+  opacity: 0.502;
+  top: -26px;
+  left: 0;
+  height: 30px;
+  width: 1080px;
+  margin: 0 30px;
+  border-radius: 6px;
+}
+
+// end search
