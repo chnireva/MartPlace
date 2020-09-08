@@ -170,7 +170,6 @@
   position: relative;
   box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
   border-radius: 6px;
-  margin-bottom: 140px;
   top: 66px;
   input {
     display: block;
@@ -253,3 +252,46 @@
 }
 
 // end search
+
+// start advantages
+
+.advantages {
+  margin-bottom: 120px;
+  margin-top: 186px;
+}
+
+.advantages__inner {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.advantages__item {
+  max-width: 361px;
+  height: 403px;
+  max-width: 360px;
+  border-radius: 4px;
+  padding: 0 30px;
+  transition: all 0.3s;
+  &:hover {
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+  }
+
+  &-img {
+    margin-top: 40px;
+    height: 122px;
+  }
+
+  &-title {
+    margin-top: 38px;
+    font-size: 24px;
+    color: #000;
+  }
+
+  &-text {
+    margin-top: 25px;
+  }
+}
+
+// end advantages
