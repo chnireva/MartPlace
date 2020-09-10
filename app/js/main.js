@@ -7,6 +7,7 @@ $(function () {
     ratedFill: "#ffc000"
   });
 
+
   $('.slider__inner-content').slick({
     dots: false,
     arrows: true,
