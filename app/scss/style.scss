@@ -606,14 +606,15 @@ button.slick-arrow.slick-prev {
     margin-top: 30px;
     border-top: 1px solid #ececec;
     padding: 0 30px;
+    position: relative;
     .item__box-price {
       background-color: #e6f1fd;
       font-size: 500;
       color: $blue;
-      // padding: 2px 16px;
       margin-right: 13px;
-      max-width: 85px;
       height: 30px;
+      max-width: 85px;
+      padding: 2px 16px;
     }
 
     .item__box-hearts {
@@ -621,13 +622,11 @@ button.slick-arrow.slick-prev {
       margin-right: 15px;
     }
 
-    .item__box-rating {
-      margin-right: 40px;
-    }
-
     .item__box-purch {
       padding-left: 22px;
       font-size: 15px;
+      position: absolute;
+      right: 30px;
     }
   }
 }
@@ -705,3 +704,18 @@ button.slick-arrow.slick-prev {
   }
 }
 // end products
+
+// start slider-followers
+
+.slider__top-btn--blue {
+  background-color: $blue;
+}
+
+.slider__followers {
+  .slider__item {
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
+// end slider-followers
