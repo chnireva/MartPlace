@@ -712,10 +712,84 @@ button.slick-arrow.slick-prev {
 }
 
 .slider__followers {
-  .slider__item {
-    max-width: 360px;
-    width: 100%;
+  .products__item {
+    margin-bottom: 0;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+.slider__followers-inner {
+  .slick-slide {
+    width: 350px !important;
+    margin: 0 15px;
+  }
+
+  .slick-track {
+    padding-bottom: 10px;
   }
 }
 
 // end slider-followers
+
+// start statistics
+
+.statistics {
+  background-color: #212225;
+  padding: 95px 0;
+}
+
+.statistics__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.statistics__item {
+  text-align: center;
+  &-digit {
+    font-size: 36px;
+    margin-top: 40px;
+  }
+  &-text {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+  }
+}
+
+.statistics__orange {
+  color: #feb71d;
+}
+.statistics__blue {
+  color: #58c9e9;
+}
+
+.statistics__green {
+  color: #77de51;
+}
+
+.statistics__red {
+  color: #ff6a6d;
+}
+
+.icon-briefcase {
+  font-size: 48px;
+  color: #feb71d;
+}
+
+.icon-cloud-download {
+  font-size: 48px;
+  color: #58c9e9;
+}
+
+.icon-smile-o {
+  font-size: 48px;
+  color: #77de51;
+}
+
+.icon-group {
+  font-size: 48px;
+  color: #ff6a6d;
+}
+// end statistics
