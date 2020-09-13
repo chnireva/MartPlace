@@ -1234,3 +1234,177 @@ button.slick-arrow.slick-prev {
 }
 
 // end join
+
+// start footer
+
+.footer {
+  background-color: #262b30;
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+  }
+}
+
+.footer__col {
+  max-width: 280px;
+  width: 100%;
+  position: relative;
+  a {
+    font-size: 15px;
+    color: #ababab;
+  }
+  &-menu {
+    max-width: 170px;
+  }
+
+  &-form {
+    max-width: 360px;
+  }
+
+  &-first {
+    margin-top: 42px;
+  }
+
+  &-logo {
+    height: 40px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    position: absolute;
+    top: -53px;
+  }
+
+  &-title {
+    font-size: 18px;
+    color: #fff;
+  }
+
+  &-text {
+    color: #ababab;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
+
+.footer__info {
+  font-size: 15px;
+  color: #ababab;
+  padding-left: 25px;
+  margin-top: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  line-height: 26px;
+  &::before {
+    content: '\f041';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+  }
+}
+
+.footer__phone {
+  &::before {
+    content: '\f095';
+  }
+}
+
+.footer__mail {
+  &::before {
+    content: '\f0e0';
+  }
+}
+
+.footer__col-list {
+  margin-top: 25px;
+  a {
+  }
+}
+
+.footer__col-text-form {
+  margin-top: 27px;
+}
+
+.footer__form {
+  position: relative;
+  margin-top: 35px;
+  input {
+    border: none;
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    padding-left: 30px;
+    padding-right: 120px;
+    border-radius: 25px;
+    &::placeholder {
+      color: #ababab;
+    }
+  }
+
+  button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: $blue;
+    border: none;
+    height: 50px;
+    width: 110px;
+    cursor: pointer;
+    border-radius: 25px;
+    color: #fff;
+  }
+}
+
+.footer__social-link {
+  margin-top: 48px;
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 10px;
+    }
+  }
+  a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-image: url(../images/icons/css_sprites.png);
+  }
+}
+
+.link-facebook {
+  background-position: -42px -0;
+}
+.link-twitter {
+  background-position: -0 -0;
+}
+.link-google {
+  background-position: -84px -42px;
+}
+.link-pinterest {
+  background-position: -0 -42px;
+}
+.link-linkedin {
+  background-position: -42px -42px;
+}
+.link-dribbble {
+  background-position: -84px -0;
+}
+
+.footer__copy {
+  background-color: #192027;
+  &-text {
+    text-align: center;
+    font-size: 15px;
+    color: #999;
+    padding: 32px 0;
+    span {
+      color: #fff;
+    }
+  }
+}
+// end footer
