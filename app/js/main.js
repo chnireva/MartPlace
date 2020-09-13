@@ -32,6 +32,18 @@ $(function () {
     // autoplay: 3000
   });
 
+  $('.feedback__content-inner').slick({
+    dots: false,
+    arrows: true,
+    prevArrow:
+      '<button class="slick-arrow slick-prev"><img src="images/icons/slider-left.png" alt=""></button>',
+    nextArrow:
+      '<button class="slick-arrow slick-next"><img src="images/icons/slider-right.png" alt=""></button>',
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    // autoplay: 3000
+  });
+
   var mixer = mixitup('.products__inner-box');
 
 
