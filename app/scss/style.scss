@@ -199,11 +199,11 @@
   height: 55px;
   width: 195px;
   background-color: transparent;
-  color: $text;
   border-left: 1px solid #dcdcdc;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  cursor: pointer;
   &::after {
     content: '';
     background-image: url(../images/icons/arrow-down.png);
@@ -211,6 +211,35 @@
     background-position: center;
     width: 13px;
     height: 8px;
+    &:hover {
+    }
+  }
+
+  &-text {
+    color: $text;
+  }
+
+  &-menu {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: -1px;
+    background-color: #fff;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+    border: 1px solid #dcdcdc;
+    border-top: none;
+    width: 195px;
+    text-align: left;
+    li + li {
+      border-top: 1px solid #dcdcdc;
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: $text;
+      padding: 20px;
+    }
   }
 }
 
@@ -373,6 +402,15 @@
 .slider__item-left {
   max-width: 555px;
   height: 450px;
+  position: relative;
+
+  &:hover .products__img {
+    height: 100%;
+  }
+
+  .products__img {
+    background-image: url(../images/slider-weekly/slider-hover.jpg);
+  }
 }
 
 .slider__item-right {
@@ -512,13 +550,56 @@ button.slick-arrow.slick-prev {
 
 .top__items-text {
   color: #747b86;
-  margin-right: 25px;
+  margin-right: 12px;
 }
 
 .top__items-dots {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+}
+
+.dots__menu {
+  display: none;
+  position: absolute;
+  top: 41px;
+  right: -12px;
+  z-index: 1;
+  width: 183px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  padding: 20px 24px;
+  &-decor {
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    top: -6px;
+    right: 20px;
+    transform: rotate(43deg) skew(20deg, 20deg);
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+  }
+
+  &-item {
+    font-size: 15px;
+    line-height: 24px;
+    color: #747b86;
+    font-weight: 500;
+    &--active {
+      color: $blue;
+    }
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .top__items-dot {

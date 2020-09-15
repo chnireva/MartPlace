@@ -44,6 +44,14 @@ $(function () {
     // autoplay: 3000
   });
 
+  $('.top__items-dots').on('click', function () {
+    $('.dots__menu').slideToggle();
+  });
+
+  $('.search__form-all').on('click', function () {
+    $('.search__form-all-menu').slideToggle();
+  });
+
   var mixer = mixitup('.products__inner-box');
 
 
