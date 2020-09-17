@@ -79,3 +79,86 @@ body {
 .jq-ry-container {
   padding: 0;
 }
+
+.breadcrumbs {
+  &__inner {
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: '/';
+          position: absolute;
+          left: 8px;
+          color: #fff;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+          color: #bfcad7;
+        }
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    border: none;
+    width: 50px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .icon-long-arrow-left {
+    margin-right: 20px;
+  }
+
+  .icon-long-arrow-right {
+    background-color: #7347c1;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  .pagination__list {
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 3px;
+      }
+    }
+
+    a,
+    span {
+      width: 50px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      font-weight: 500;
+      color: #747b86;
+      border-radius: 20px;
+      &.active {
+        background-color: $blue;
+        color: #f3f3f8;
+      }
+    }
+  }
+}
