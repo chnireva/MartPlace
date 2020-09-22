@@ -49,6 +49,26 @@ $(function () {
     $('.search__form-all-menu').slideToggle();
   });
 
+  $('.settings__price').on('click', function () {
+    $('.settings__price-menu').slideToggle();
+  });
+
+  $('.settings__items').on('click', function () {
+    $('.settings__items-menu').slideToggle();
+  });
+
+  $('.aside__title-categories').on('click', function () {
+    $('.category__list').slideToggle();
+  });
+
+  $('.aside__title-filter').on('click', function () {
+    $('.filter__list').slideToggle();
+  });
+
+  $('.aside__title-price').on('click', function () {
+    $('.aside__price-form').slideToggle();
+  });
+
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     min: 0,

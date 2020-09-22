@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>MartPlace</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
@@ -82,9 +82,9 @@
       <section class="search page-search">
         <div class="container">
           <div class="page-search__inner">
-            <div class="page-search__inner-text">
+            <h2 class="page-search__inner-text">
               <span>4,572 </span>wordpress themes, made with love
-            </div>
+            </h2>
             <div class="footer__form page-search__form">
               <form>
                 <input type="text" placeholder="Search your products">
@@ -112,8 +112,24 @@
                 <button class="product__page-btn" type="button">Popular Products</button>
               </div>
               <div class="product__page-settings">
-                <div class="settings__price"><span>Price :</span>Low to High</div>
-                <div class="settings__items">12 Items Per Page</div>
+                <div class="settings__price">
+                  <span>Price :</span>Low to High
+                  <ul class="settings__price-menu">
+                    <li><button class="settings__price-menu-item" type="button">Low to High</button></li>
+                    <li><button class="settings__price-menu-item" type="button">Low to High</button></li>
+                    <li><button class="settings__price-menu-item" type="button">Low to High</button></li>
+                    <li><button class="settings__price-menu-item" type="button">Low to High</button></li>
+                  </ul>
+                </div>
+                <div class="settings__items">
+                  12 Items Per Page
+                  <ul class="settings__items-menu">
+                    <li><button class="settings__items-menu-item" type="button">10 Items Per Page</button></li>
+                    <li><button class="settings__items-menu-item" type="button">8 Items Per Page</button></li>
+                    <li><button class="settings__items-menu-item" type="button">4 Items Per Page</button></li>
+                    <li><button class="settings__items-menu-item" type="button">2 Items Per Page</button></li>
+                  </ul>
+                </div>
                 <div class="settings__btn">
                   <button class="settings__btn-item-grid" type="button"></button>
                   <button class="settings__btn-item-grid--gray" type="button"></button>
@@ -128,9 +144,9 @@
           <div class="product__page-inner">
             <aside class="product__page-aside">
               <div class="category aside__item">
-                <div class="aside__title">
+                <h3 class="aside__title aside__title-categories">
                   Categories
-                </div>
+                </h3>
                 <ul class="category__list">
                   <li><a class="category__list-item category__list-item--active" href="#">WordPress</a><span>35</span>
                   </li>
@@ -143,9 +159,9 @@
                 </ul>
               </div>
               <div class="filter aside__item">
-                <div class="aside__title">
+                <h3 class="aside__title aside__title-filter">
                   Filter Products
-                </div>
+                </h3>
                 <ul class="filter__list">
                   <li><a class="filter__list-item" href="#">Trending Products</a></li>
                   <li><a class="filter__list-item" href="#">Popular Products</a></li>
@@ -157,10 +173,10 @@
                 </ul>
               </div>
               <div class="price-range aside__item">
-                <div class="aside__title">
+                <h3 class="aside__title aside__title-price">
                   Pricing Range
-                </div>
-                <form>
+                </h3>
+                <form class="aside__price-form">
                   <input type="text" class="js-range-slider" name="my_range" value="" />
                   <button type="submit">Search Update</button>
                 </form>
@@ -169,12 +185,15 @@
             <div class="product__page-content">
               <div class="product__page-items">
                 <div class="product__item">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="product__item-content">
-                    <div class="item__content-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
+                    <h3>
+                      <a class="item__content-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
                     <div class="item__content-seller">
                       <a class="seller__img" href="#" style="background-image: url(images/icons/user.jpg);"></a>
                       <a class="seller__name" href="#">Theme-Valley</a>
@@ -186,21 +205,24 @@
                   </div>
                   <div class="product__item-price">
                     <div class="item__box-price">$18</div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                 </div>
 
                 <div class="product__item-list">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a href="#" class="product__item-img"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="item__right-1">
-                    <div class="item__right-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
-                    <div class="item__right-text">
+                    <h3>
+                      <a class="item__right-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
+                    <p class="item__right-text">
                       Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-                    </div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    </p>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                   <div class="item__right-2">
                     <div class="item__content-seller">
@@ -208,7 +230,7 @@
                       <a class="seller__name" href="#">Theme-Valley</a>
                     </div>
                     <div class="item__right-loves">90 loves</div>
-                    <div class="item__right-comments">90 Comments</div>
+                    <a class="item__right-comments" href="#">90 Comments</a>
                     <div class="item__right-rate">
                       <div class="rate-star"></div><span>(34)</span>
                     </div>
@@ -220,12 +242,15 @@
                 </div>
 
                 <div class="product__item">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="product__item-content">
-                    <div class="item__content-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
+                    <h3>
+                      <a class="item__content-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
                     <div class="item__content-seller">
                       <a class="seller__img" href="#" style="background-image: url(images/icons/user.jpg);"></a>
                       <a class="seller__name" href="#">Theme-Valley</a>
@@ -237,20 +262,24 @@
                   </div>
                   <div class="product__item-price">
                     <div class="item__box-price">$18</div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                 </div>
+
                 <div class="product__item-list">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a href="#" class="product__item-img"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="item__right-1">
-                    <div class="item__right-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
-                    <div class="item__right-text">
+                    <h3>
+                      <a class="item__right-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
+                    <p class="item__right-text">
                       Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-                    </div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    </p>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                   <div class="item__right-2">
                     <div class="item__content-seller">
@@ -258,7 +287,7 @@
                       <a class="seller__name" href="#">Theme-Valley</a>
                     </div>
                     <div class="item__right-loves">90 loves</div>
-                    <div class="item__right-comments">90 Comments</div>
+                    <a class="item__right-comments" href="#">90 Comments</a>
                     <div class="item__right-rate">
                       <div class="rate-star"></div><span>(34)</span>
                     </div>
@@ -268,13 +297,17 @@
                     <div class="item__box-purch">892</div>
                   </div>
                 </div>
+
                 <div class="product__item">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a class="product__item-img" href="#"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="product__item-content">
-                    <div class="item__content-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
+                    <h3>
+                      <a class="item__content-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
                     <div class="item__content-seller">
                       <a class="seller__img" href="#" style="background-image: url(images/icons/user.jpg);"></a>
                       <a class="seller__name" href="#">Theme-Valley</a>
@@ -286,20 +319,24 @@
                   </div>
                   <div class="product__item-price">
                     <div class="item__box-price">$18</div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                 </div>
+
                 <div class="product__item-list">
-                  <div class="product__item-img" style="background-image: url(images/products/product-page.png);"></div>
+                  <a href="#" class="product__item-img"
+                    style="background-image: url(images/products/product-page.png);"></a>
                   <div class="item__right-1">
-                    <div class="item__right-title">
-                      Finance and Consulting
-                      Business Theme
-                    </div>
-                    <div class="item__right-text">
+                    <h3>
+                      <a class="item__right-title" href="#">
+                        Finance and Consulting
+                        Business Theme
+                      </a>
+                    </h3>
+                    <p class="item__right-text">
                       Nunc placerat mi id nisi inter dum mollis. Praesent phare...
-                    </div>
-                    <div class="item__seller-platform">Wordpress</div>
+                    </p>
+                    <a class="item__seller-platform" href="#">Wordpress</a>
                   </div>
                   <div class="item__right-2">
                     <div class="item__content-seller">
@@ -307,7 +344,7 @@
                       <a class="seller__name" href="#">Theme-Valley</a>
                     </div>
                     <div class="item__right-loves">90 loves</div>
-                    <div class="item__right-comments">90 Comments</div>
+                    <a class="item__right-comments" href="#">90 Comments</a>
                     <div class="item__right-rate">
                       <div class="rate-star"></div><span>(34)</span>
                     </div>

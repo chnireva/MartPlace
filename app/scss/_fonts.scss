@@ -26,6 +26,24 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star-o:before {
+  content: '\f006';
+}
+.icon-user:before {
+  content: '\f007';
+}
+.icon-cog:before {
+  content: '\f013';
+}
+.icon-gear:before {
+  content: '\f013';
+}
+.icon-trash-o:before {
+  content: '\f014';
+}
+.icon-home:before {
+  content: '\f015';
+}
 .icon-clock-o:before {
   content: '\f017';
 }
@@ -34,6 +52,12 @@
 }
 .icon-map-marker:before {
   content: '\f041';
+}
+.icon-edit:before {
+  content: '\f044';
+}
+.icon-pencil-square-o:before {
+  content: '\f044';
 }
 .icon-leaf:before {
   content: '\f06c';
@@ -53,11 +77,20 @@
 .icon-heart-o:before {
   content: '\f08a';
 }
+.icon-sign-out:before {
+  content: '\f08b';
+}
+.icon-upload:before {
+  content: '\f093';
+}
 .icon-phone:before {
   content: '\f095';
 }
 .icon-phone-square:before {
   content: '\f098';
+}
+.icon-credit-card:before {
+  content: '\f09d';
 }
 .icon-briefcase:before {
   content: '\f0b1';
@@ -88,6 +121,12 @@
 }
 .icon-angle-down:before {
   content: '\f107';
+}
+.icon-mail-reply:before {
+  content: '\f112';
+}
+.icon-reply:before {
+  content: '\f112';
 }
 .icon-smile-o:before {
   content: '\f118';
