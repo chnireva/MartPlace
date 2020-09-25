@@ -2747,7 +2747,8 @@ button.slick-arrow.slick-prev {
 // end page
 
 // start login
-.login {
+.login,
+.register {
   background-color: $bg;
   padding: 70px 0 120px;
 }
@@ -2784,6 +2785,7 @@ button.slick-arrow.slick-prev {
   .login__title {
     font-size: 26px;
     color: #000;
+    margin-bottom: 10px;
   }
 }
 
@@ -2857,3 +2859,21 @@ button.slick-arrow.slick-prev {
   }
 }
 // end login
+
+//start register
+.register {
+  .login__text {
+    max-width: 440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  button {
+    margin-top: 22px;
+  }
+
+  .login__inner-box {
+    margin-bottom: 30px;
+  }
+}
+//end register
