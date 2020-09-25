@@ -2748,7 +2748,8 @@ button.slick-arrow.slick-prev {
 
 // start login
 .login,
-.register {
+.register,
+.recover {
   background-color: $bg;
   padding: 70px 0 120px;
 }
@@ -2860,7 +2861,7 @@ button.slick-arrow.slick-prev {
 }
 // end login
 
-//start register
+// start register
 .register {
   .login__text {
     max-width: 440px;
@@ -2876,4 +2877,18 @@ button.slick-arrow.slick-prev {
     margin-bottom: 30px;
   }
 }
-//end register
+// end register
+
+// start recover
+.recover {
+  .login__text {
+    max-width: 460px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  button {
+    margin-top: 22px;
+  }
+}
+// end recover
