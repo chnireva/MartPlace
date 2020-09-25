@@ -122,6 +122,8 @@ $(function () {
     $('.settings__btn-item-list').removeClass('active');
   });
 
+  $('input[type="checkbox"], select').styler();
+
   var mixer = mixitup('.products__inner-box');
 
 
