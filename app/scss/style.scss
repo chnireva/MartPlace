@@ -2747,6 +2747,7 @@ button.slick-arrow.slick-prev {
 // end page
 
 // start login
+
 .login,
 .register,
 .recover {
@@ -2859,9 +2860,11 @@ button.slick-arrow.slick-prev {
     }
   }
 }
+
 // end login
 
 // start register
+
 .register {
   .login__text {
     max-width: 440px;
@@ -2880,6 +2883,7 @@ button.slick-arrow.slick-prev {
 // end register
 
 // start recover
+
 .recover {
   .login__text {
     max-width: 460px;
@@ -2891,4 +2895,33 @@ button.slick-arrow.slick-prev {
     margin-top: 22px;
   }
 }
+
 // end recover
+
+// start terms
+
+.terms {
+  background-color: $bg;
+  padding: 60px 0 120px;
+}
+
+.terms__inner {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-radius: 4px;
+  padding-bottom: 60px;
+}
+
+.terms__item {
+  &-title {
+    font-size: 24px;
+    color: #000;
+    border-bottom: 1px solid #e8ebf0;
+    padding: 20px 30px;
+  }
+
+  &-text {
+    padding: 20px 30px 30px 30px;
+  }
+}
+// end terms
