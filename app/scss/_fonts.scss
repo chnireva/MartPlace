@@ -32,6 +32,9 @@
 .icon-user:before {
   content: '\f007';
 }
+.icon-check:before {
+  content: '\f00c';
+}
 .icon-cog:before {
   content: '\f013';
 }
@@ -46,6 +49,9 @@
 }
 .icon-clock-o:before {
   content: '\f017';
+}
+.icon-inbox:before {
+  content: '\f01c';
 }
 .icon-lock:before {
   content: '\f023';
@@ -149,12 +155,12 @@
 .icon-circle-thin:before {
   content: '\f1db';
 }
+.icon-question-circle-o:before {
+  content: '\f29c';
+}
 .icon-drivers-license-o:before {
   content: '\f2c3';
 }
 .icon-id-card-o:before {
   content: '\f2c3';
-}
-.icon-check:before {
-  content: '\f00c';
 }
