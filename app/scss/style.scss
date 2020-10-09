@@ -65,6 +65,26 @@
   align-items: center;
 }
 
+.menu__btn {
+  display: none;
+  width: 30px;
+  cursor: pointer;
+  div {
+    height: 5px;
+    background-color: $blue;
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.header__btn-user {
+  display: none;
+  cursor: pointer;
+  position: relative;
+}
+
 .menu__list {
   li {
     display: inline-block;
@@ -245,6 +265,7 @@
 .header__box {
   display: flex;
   align-items: center;
+  transition: all 0.3s;
 }
 
 .header__icons {
@@ -2245,6 +2266,7 @@ button.slick-arrow.slick-prev {
       position: absolute;
       font-family: 'icomoon';
       right: 18px;
+      top: 6px;
       font-size: 16px;
     }
 
@@ -4215,3 +4237,5 @@ button.slick-arrow.slick-prev {
   }
 }
 // end blog
+
+@import 'media';

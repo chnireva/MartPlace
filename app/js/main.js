@@ -133,6 +133,14 @@ $(function () {
     return false;
   });
 
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').slideToggle();
+  });
+
+  $('.header__btn-user').on('click', function () {
+    $('.header__box').toggleClass('active');
+  });
+
   var mixer = mixitup('.products__inner-box');
 
 
