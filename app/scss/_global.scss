@@ -1,0 +1,178 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: $text;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 30px;
+  color: #000;
+  font-weight: 500;
+}
+
+.inner__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background-color: #fff;
+  padding: 0 30px;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+
+.jq-ry-container {
+  padding: 0;
+}
+
+.breadcrumbs {
+  &__inner {
+    padding: 30px 0 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    li {
+      display: inline-block;
+      position: relative;
+      & + li {
+        padding-left: 24px;
+        &::before {
+          content: '/';
+          position: absolute;
+          left: 8px;
+          color: #fff;
+        }
+      }
+      &:last-child {
+        a,
+        span {
+          color: #bfcad7;
+        }
+      }
+    }
+    a {
+      color: #fff;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    border: none;
+    width: 50px;
+    height: 38px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
+  }
+
+  .icon-long-arrow-left {
+    margin-right: 20px;
+  }
+
+  .icon-long-arrow-right {
+    background-color: #7347c1;
+    color: #fff;
+    margin-left: 20px;
+  }
+
+  .pagination__list {
+    li {
+      display: inline-block;
+      & + li {
+        margin-left: 3px;
+      }
+    }
+
+    a,
+    span {
+      width: 50px;
+      height: 38px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      font-weight: 500;
+      color: #747b86;
+      border-radius: 20px;
+      &.active {
+        background-color: $blue;
+        color: #f3f3f8;
+      }
+    }
+  }
+}
